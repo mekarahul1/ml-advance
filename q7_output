@@ -1,0 +1,459 @@
+for text  :It is raining today in Seattle
+Calling DetectEntities
+{
+    "Entities": [
+        {
+            "BeginOffset": 14,
+            "EndOffset": 19,
+            "Score": 0.9784814715385437,
+            "Text": "today",
+            "Type": "DATE"
+        },
+        {
+            "BeginOffset": 23,
+            "EndOffset": 30,
+            "Score": 0.9954556226730347,
+            "Text": "Seattle",
+            "Type": "LOCATION"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "200",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:44 GMT",
+            "x-amzn-requestid": "8eef8a5f-67d8-11e8-b0ca-bf4f41353e85"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "8eef8a5f-67d8-11e8-b0ca-bf4f41353e85",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectDominantLanguage
+{
+    "Languages": [
+        {
+            "LanguageCode": "en",
+            "Score": 0.9880611896514893
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "64",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:44 GMT",
+            "x-amzn-requestid": "8f242ec2-67d8-11e8-80eb-37794166f723"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "8f242ec2-67d8-11e8-80eb-37794166f723",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectSentiment
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "164",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:45 GMT",
+            "x-amzn-requestid": "8f53a36d-67d8-11e8-9d2e-cfc410bdd67f"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "8f53a36d-67d8-11e8-9d2e-cfc410bdd67f",
+        "RetryAttempts": 0
+    },
+    "Sentiment": "NEUTRAL",
+    "SentimentScore": {
+        "Mixed": 0.002063251566141844,
+        "Negative": 0.013271247036755085,
+        "Neutral": 0.9274052977561951,
+        "Positive": 0.057260122150182724
+    }
+}
+Calling DetectKeyPhrases
+{
+    "KeyPhrases": [
+        {
+            "BeginOffset": 14,
+            "EndOffset": 19,
+            "Score": 0.9631543755531311,
+            "Text": "today"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "92",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:45 GMT",
+            "x-amzn-requestid": "8f92f5f7-67d8-11e8-a28f-99d098eaf478"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "8f92f5f7-67d8-11e8-a28f-99d098eaf478",
+        "RetryAttempts": 0
+    }
+}
+for text  :I feel great this morning.
+Calling DetectEntities
+{
+    "Entities": [
+        {
+            "BeginOffset": 13,
+            "EndOffset": 25,
+            "Score": 0.9446086883544922,
+            "Text": "this morning",
+            "Type": "DATE"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "111",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:45 GMT",
+            "x-amzn-requestid": "8fbfd1fa-67d8-11e8-a128-2520cc73b138"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "8fbfd1fa-67d8-11e8-a128-2520cc73b138",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectDominantLanguage
+{
+    "Languages": [
+        {
+            "LanguageCode": "en",
+            "Score": 0.9844985604286194
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "64",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:46 GMT",
+            "x-amzn-requestid": "8fee5c20-67d8-11e8-83b1-b3bb4d57df89"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "8fee5c20-67d8-11e8-83b1-b3bb4d57df89",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectSentiment
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "166",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:46 GMT",
+            "x-amzn-requestid": "901d0db1-67d8-11e8-bcb2-4d267434468a"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "901d0db1-67d8-11e8-bcb2-4d267434468a",
+        "RetryAttempts": 0
+    },
+    "Sentiment": "POSITIVE",
+    "SentimentScore": {
+        "Mixed": 0.0022184238769114017,
+        "Negative": 0.00046284979907795787,
+        "Neutral": 0.006783377844840288,
+        "Positive": 0.990535318851471
+    }
+}
+Calling DetectKeyPhrases
+{
+    "KeyPhrases": [
+        {
+            "BeginOffset": 13,
+            "EndOffset": 25,
+            "Score": 0.9673488140106201,
+            "Text": "this morning"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "99",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:46 GMT",
+            "x-amzn-requestid": "904ef354-67d8-11e8-b0ca-bf4f41353e85"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "904ef354-67d8-11e8-b0ca-bf4f41353e85",
+        "RetryAttempts": 0
+    }
+}
+for text  :This view is horrible
+Calling DetectEntities
+{
+    "Entities": [],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "15",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:46 GMT",
+            "x-amzn-requestid": "9079ac28-67d8-11e8-bf23-993fb5cc9ffe"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "9079ac28-67d8-11e8-bf23-993fb5cc9ffe",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectDominantLanguage
+{
+    "Languages": [
+        {
+            "LanguageCode": "en",
+            "Score": 0.9928309917449951
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "64",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:47 GMT",
+            "x-amzn-requestid": "90aa32c2-67d8-11e8-9d2e-cfc410bdd67f"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "90aa32c2-67d8-11e8-9d2e-cfc410bdd67f",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectSentiment
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "163",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:47 GMT",
+            "x-amzn-requestid": "90d53a05-67d8-11e8-bb60-e9f4ea6c0ae0"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "90d53a05-67d8-11e8-bb60-e9f4ea6c0ae0",
+        "RetryAttempts": 0
+    },
+    "Sentiment": "NEGATIVE",
+    "SentimentScore": {
+        "Mixed": 0.010265082120895386,
+        "Negative": 0.8358643054962158,
+        "Neutral": 0.14334893226623535,
+        "Positive": 0.01052170805633068
+    }
+}
+Calling DetectKeyPhrases
+{
+    "KeyPhrases": [
+        {
+            "BeginOffset": 0,
+            "EndOffset": 9,
+            "Score": 0.9950739145278931,
+            "Text": "This view"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "94",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:47 GMT",
+            "x-amzn-requestid": "91060dfc-67d8-11e8-a28f-99d098eaf478"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "91060dfc-67d8-11e8-a28f-99d098eaf478",
+        "RetryAttempts": 0
+    }
+}
+for text  :Childhood is the time to play
+Calling DetectEntities
+{
+    "Entities": [],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "15",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:48 GMT",
+            "x-amzn-requestid": "912f1988-67d8-11e8-8ccb-59e057118f24"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "912f1988-67d8-11e8-8ccb-59e057118f24",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectDominantLanguage
+{
+    "Languages": [
+        {
+            "LanguageCode": "en",
+            "Score": 0.9945559501647949
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "64",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:48 GMT",
+            "x-amzn-requestid": "915d7cf4-67d8-11e8-94a7-2d89da8ef2a3"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "915d7cf4-67d8-11e8-94a7-2d89da8ef2a3",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectSentiment
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "163",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:48 GMT",
+            "x-amzn-requestid": "918c7bb4-67d8-11e8-af3e-b3ba3e4df68f"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "918c7bb4-67d8-11e8-af3e-b3ba3e4df68f",
+        "RetryAttempts": 0
+    },
+    "Sentiment": "NEUTRAL",
+    "SentimentScore": {
+        "Mixed": 0.0038498251233249903,
+        "Negative": 0.03630971908569336,
+        "Neutral": 0.8499161601066589,
+        "Positive": 0.10992435365915298
+    }
+}
+Calling DetectKeyPhrases
+{
+    "KeyPhrases": [
+        {
+            "BeginOffset": 0,
+            "EndOffset": 9,
+            "Score": 0.9978817105293274,
+            "Text": "Childhood"
+        },
+        {
+            "BeginOffset": 13,
+            "EndOffset": 21,
+            "Score": 0.9934477806091309,
+            "Text": "the time"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "173",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:49 GMT",
+            "x-amzn-requestid": "91be61ac-67d8-11e8-80eb-37794166f723"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "91be61ac-67d8-11e8-80eb-37794166f723",
+        "RetryAttempts": 0
+    }
+}
+for text  :I love Seattle but the winter is too cold for me.
+Calling DetectEntities
+{
+    "Entities": [
+        {
+            "BeginOffset": 7,
+            "EndOffset": 14,
+            "Score": 0.9428465962409973,
+            "Text": "Seattle",
+            "Type": "LOCATION"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "109",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:49 GMT",
+            "x-amzn-requestid": "91ed1307-67d8-11e8-9d2e-cfc410bdd67f"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "91ed1307-67d8-11e8-9d2e-cfc410bdd67f",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectDominantLanguage
+{
+    "Languages": [
+        {
+            "LanguageCode": "en",
+            "Score": 0.9882155656814575
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "64",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:49 GMT",
+            "x-amzn-requestid": "92190473-67d8-11e8-868b-25fbfe77d167"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "92190473-67d8-11e8-868b-25fbfe77d167",
+        "RetryAttempts": 0
+    }
+}
+Calling DetectSentiment
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "160",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:50 GMT",
+            "x-amzn-requestid": "9249d875-67d8-11e8-8c61-871859feb345"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "9249d875-67d8-11e8-8c61-871859feb345",
+        "RetryAttempts": 0
+    },
+    "Sentiment": "MIXED",
+    "SentimentScore": {
+        "Mixed": 0.8935976624488831,
+        "Negative": 0.005959300324320793,
+        "Neutral": 0.007142007350921631,
+        "Positive": 0.0933009684085846
+    }
+}
+Calling DetectKeyPhrases
+{
+    "KeyPhrases": [
+        {
+            "BeginOffset": 7,
+            "EndOffset": 14,
+            "Score": 0.9913008809089661,
+            "Text": "Seattle"
+        },
+        {
+            "BeginOffset": 19,
+            "EndOffset": 29,
+            "Score": 0.9992104172706604,
+            "Text": "the winter"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "connection": "keep-alive",
+            "content-length": "174",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Mon, 04 Jun 2018 09:20:50 GMT",
+            "x-amzn-requestid": "927ccff5-67d8-11e8-b9d5-8322bbb5dc2a"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "927ccff5-67d8-11e8-b9d5-8322bbb5dc2a",
+        "RetryAttempts": 0
+    }
+}
+
