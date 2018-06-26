@@ -10,6 +10,7 @@ import boto3
 from io import StringIO
 #import StringIO
 from contextlib import closing
+from pygame import mixer
 
 polly = client("polly", 'us-east-1' )
 usertext=input("enter the text ");
@@ -26,3 +27,6 @@ if "AudioStream" in response:
         fo = open("pollytest.mp3", "wb")
         fo.write(data)
         fo.close()
+mixer.init()
+mixer.music.load('./pollytest.mp3')
+mixer.music.play()
