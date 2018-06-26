@@ -12,19 +12,31 @@ if __name__ == "__main__":
 	
     client=boto3.client('rekognition','us-west-2')
 
-    file=['rahul1.JPG','rahul2.JPG','rahul3.jpg','rahul4.jpg','rahul5.jpg','suraj1.JPG','suraj2.JPG','suraj3.JPG','suraj4.JPG','suraj5.JPG'] 
+    file=['rahul1.JPG','rahul2.JPG','rahul3.jpg','rahul4.jpg','rahul5.jpg']
+    file2=['suraj1.JPG','suraj2.JPG','suraj3.JPG','suraj4.JPG','suraj5.JPG']
     bucket='openbucket12'
     for f in file:
             fileName=f
             
             response=client.index_faces(CollectionId=collectionId,
                                         Image={'S3Object':{'Bucket':bucket,'Name':fileName}},
-                                        ExternalImageId=fileName,
+                                        ExternalImageId='Rahul',
                                         DetectionAttributes=['ALL'])
-
+            #print(response)
             print ('Faces in ' + fileName) 							
             for faceRecord in response['FaceRecords']:
                  print (faceRecord['Face']['FaceId'])
+    for f in file2:
+            fileName=f
+            
+            response=client.index_faces(CollectionId=collectionId,
+                                        Image={'S3Object':{'Bucket':bucket,'Name':fileName}},
+                                        ExternalImageId='Suraj',
+                                        DetectionAttributes=['ALL'])
+            #print(response)
+            print ('Faces in ' + fileName) 							
+            for faceRecord in response['FaceRecords']:
+                 print (faceRecord['Face']['FaceId'])    
     fileName='testimage.jpg'
     threshold = 90
     maxFaces=2
@@ -36,8 +48,11 @@ if __name__ == "__main__":
 
                                 
     faceMatches=response['FaceMatches']
+    print(response)
     print ('Matching faces')
+    person_name = response['FaceMatches'][0]['Face']['ExternalImageId']
+    print('Person in the images is '+person_name)
     for match in faceMatches:
-            print ('FaceId:' + match['Face']['FaceId'])
-            print ('Similarity: ' + "{:.2f}".format(match['Similarity']) + "%")
+            print ('His FaceId is :' + match['Face']['FaceId'])
+            print ('Has a Similarity of: ' + "{:.2f}".format(match['Similarity']) + "%")
             print ()
