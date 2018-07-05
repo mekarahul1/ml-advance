@@ -1,5 +1,5 @@
-i have created a table with key as ID as row no from 1 to 9 
-and Id has book name as value.
+i have created a table with key as ID as book name 
+
 same utterence are 
-what is the book in row 5?
-what is the book in row 12?
+do you have 2 states?
+do you have game of thrones?
