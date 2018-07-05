@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
                                 
     faceMatches=response['FaceMatches']
-    print(response)
+#    print(response)
     print ('Matching faces')
     person_name = response['FaceMatches'][0]['Face']['ExternalImageId']
     print('Person in the images is '+person_name)
