@@ -1,0 +1,10 @@
+Matching faces
+His FaceId is :d5e63bd2-a500-4c49-a087-58f4dd86f064
+Has a Similarity of: 98.93%
+Person in the images is Rahul
+His FaceId is :d2e74cc3-05b1-4f0b-88b2-40ab9a110845
+Has a Similarity of: 98.93%
+Person in the images is Rahul
+===================================================
+face not matched with the faces in database
+
